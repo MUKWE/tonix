@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonix Corporation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Tonix Corporation Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')" class="nav-link active">Home</a></li>
+                    <li><a href="#" onclick="showSection('features')" class="nav-link">Features</a></li>
+                    <li><a href="#" onclick="showSection('contact')" class="nav-link">Contact</a></li>
+                    <li><a href="#" onclick="showSection('client-portal')" class="nav-link">Client Portal</a></li>
+                    <li><a href="#" onclick="showSection('admin-dashboard')" class="nav-link">Admin Dashboard</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="section active">
+                <div class="hero">
+                    <h1>Welcome to Tonix Corporation</h1>
+                    <p>Your trusted partner for short-term funding solutions</p>
+                    <a href="#" onclick="showSection('client-portal')" class="cta-button">Get Started</a>
+                </div>
+
+                <div class="form-container">
+                    <div class="about-container">
+                        <div class="about-text">
+                            <h2>About Tonix Corporation</h2>
+                            <p>Tonix Corporation is a financial service provider that specializes in offering short-term funding solutions to businesses that have secured government or corporate tenders but lack upfront capital. We understand that winning a tender is just the first step – executing it successfully requires immediate access to working capital.</p>
+                            
+                            <h3>What We Do</h3>
+                            <p>We provide the capital you need to start your tender project immediately. Our streamlined application process ensures fast approval and funding with flexible, tailored repayment schedules based on your tender payment terms.</p>
+                            
+                            <h3>Why Choose Tonix?</h3>
+                            <p>We specialize in tender finance with deep industry knowledge. We offer competitive interest rates, a transparent fee structure with no hidden costs, and a secure digital platform for all your applications.</p>
+                        </div>
+                        <div class="about-sidebar">
+                            <img src="slogan.jpeg" alt="Your goals are our light">
+                            <img src="security-logo.jpeg" alt="Tonix Protection Services">
+                            <p>Part of the wider Tonix Corporation, including Tonix Protection Services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h2>Our Process in Action</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <img src="image1.jpeg" alt="Tonix team installing equipment">
+                            <h3>Our Team in Action</h3>
+                            <p>Our professional team is ready to support your project's needs.</p>
+                        </div>
+                        <div class="info-card">
+                            <img src="image2.jpeg" alt="Tonix team on site">
+                            <h3>On-Site Operations</h3>
+                            <p>We understand the logistics and requirements of tender projects.</p>
+                        </div>
+                        <div class="info-card">
+                            <img src="image3.jpeg" alt="Tonix engineers at work">
+                            <h3>Professional, Reliable Service</h3>
+                            <p>We provide dedicated managers for personalized service.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <div class="form-container">
+                    <h2>Our Services</h2>
+                    <p>We offer a range of financing solutions to meet your needs. See our primary services below.</p>
+                    <div class="poster-grid">
+                        <div class="poster-card">
+                            <img src="poster1.jpeg" alt="We Finance Tenders and Quotations">
+                        </div>
+                         <div class="poster-card">
+                            <img src="poster4.jpeg" alt="Tender and Quotation Finance Details">
+                        </div>
+                        <div class="poster-card">
+                            <img src="poster2.jpeg" alt="We Finance Tenders against Cars and Bakkies">
+                        </div>
+                        <div class="poster-card">
+                            <img src="poster3.jpeg" alt="Crafting Finance for Success">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with our team for personalized assistance with your tender financing needs.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:mzwoda.mz@gmail.com">mzwoda.mz@gmail.com</a></p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>📱 Phone</h3>
+                            <p><a href="tel:0793107866">079 310 7866</a></p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>📍 Address</h3>
+                            <p>Lombardy 24 Lynwood Street<br>South Africa</p>
+                        </div>
+                    </div>
+
+                    <div class="form-container" style="margin-top: 2rem;">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">Full Name</label>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <select id="contactSubject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="application">Application Support</option>
+                                    <option value="rates">Interest Rates</option>
+                                    <option value="documents">Document Requirements</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="client-portal" class="section">
+                <div class="form-container">
+                    <h2>Client Portal</h2>
+                    <p>Access your secure client dashboard to manage applications and track progress.</p>
+                    
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('login-tab')">Login</button>
+                        <button class="tab" onclick="showTab('register-tab')">Register</button>
+                        <button class="tab" onclick="showTab('dashboard-tab')">Dashboard</button>
+                        <button class="tab" onclick="showTab('submit-tab')">Submit Application</button>
+                        <button class="tab" onclick="showTab('track-tab')">Track Status</button>
+                    </div>
+
+                    <div id="login-tab" class="tab-content active">
+                        <h3>Client Login</h3>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="loginEmail">Email Address</label>
+                                <input type="email" id="loginEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                        </form>
+                    </div>
+
+                    <div id="register-tab" class="tab-content">
+                        <h3>Client Registration</h3>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="regCompanyName">Company Name</label>
+                                <input type="text" id="regCompanyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regContactName">Contact Person</label>
+                                <input type="text" id="regContactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regEmail">Email Address</label>
+                                <input type="email" id="regEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regPhone">Phone Number</label>
+                                <input type="tel" id="regPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regPassword">Password</label>
+                                <input type="password" id="regPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regConfirmPassword">Confirm Password</label>
+                                <input type="password" id="regConfirmPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Register</button>
+                        </form>
+                    </div>
+
+                    <div id="dashboard-tab" class="tab-content">
+                        <h3>Client Dashboard</h3>
+                        <div id="clientDashboard" class="hidden">
+                            <div class="notification info">
+                                <strong>Welcome back!</strong> You have 2 active applications and 1 pending document upload.
+                            </div>
+                            
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <h4>Recent Applications</h4>
+                                    <div id="recentApplications">
+                                        <div class="application-card">
+                                            <h5>Municipal Cleaning Contract - APP001</h5>
+                                            <p><span class="status-badge status-review">Under Review</span></p>
+                                            <p>Submitted: 2025-01-15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <h4>Quick Actions</h4>
+                                    <button class="btn" onclick="showTab('submit-tab')" style="margin: 0.5rem;">Submit New Application</button>
+                                    <button class="btn" onclick="showTab('track-tab')" style="margin: 0.5rem;">Track Applications</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="loginPrompt">
+                            <p>Please login to access your dashboard.</p>
+                        </div>
+                    </div>
+
+                    <div id="submit-tab" class="tab-content">
+                        <h3>Document Submission Form</h3>
+                        <form id="submitApplicationForm">
+                            <div class="form-group">
+                                <label for="tenderTitle">Tender Title</label>
+                                <input type="text" id="tenderTitle" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tenderValue">Tender Value (R)</label>
+                                <input type="number" id="tenderValue" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fundingRequired">Funding Required (R)</label>
+                                <input type="number" id="fundingRequired" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tenderDuration">Tender Duration (months)</label>
+                                <input type="number" id="tenderDuration" required>
+                            </div>
+
+                            <h4>Document Checklist</h4>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="doc1" required> Tender Award Letter
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="doc2" required> Company Registration Documents
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="doc3" required> Financial Statements (Last 3 years)
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="doc4" required> Bank Statements (Last 6 months)
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="doc5" required> Tax Clearance Certificate
+                                </label>
+                            </div>
+
+                            <div class="document-upload">
+                                <h4>Upload Documents</h4>
+                                <input type="file" id="documentUpload" multiple accept=".pdf,.doc,.docx,.jpg,.png">
+                                <p>Drag and drop files here or click to browse</p>
+                                <div id="uploadedFiles"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Submit Application</button>
+                        </form>
+                    </div>
+
+                    <div id="track-tab" class="tab-content">
+                        <h3>Application Status Tracker</h3>
+                        <div class="form-group">
+                            <label for="applicationNumber">Application Number</label>
+                            <input type="text" id="applicationNumber" placeholder="Enter your application number">
+                            <button class="btn" onclick="trackApplication()">Track Application</button>
+                        </div>
+
+                        <div id="statusResult" class="hidden">
+                            <div class="application-card">
+                                <h4>Application Status</h4>
+                                <p><strong>Application Number:</strong> <span id="appNumber"></span></p>
+                                <p><strong>Status:</strong> <span id="appStatus"></span></p>
+                                <p><strong>Submitted:</strong> <span id="appDate"></span></p>
+                                <p><strong>Progress:</strong></p>
+                                <div style="background: #f0f0f0; border-radius: 10px; height: 10px; margin: 10px 0;">
+                                    <div id="progressBar" style="background: #27ae60; height: 100%; border-radius: 10px; width: 0%; transition: width 0.5s;"></div>
+                                </div>
+                                <div id="statusNotifications"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="admin-dashboard" class="section">
+                <div class="form-container">
+                    <h2>Admin Dashboard</h2>
+                    <p>Administrative interface for Tonix staff to manage client applications and operations.</p>
+                    
+                    <div class="tabs">
+                        <button class="tab active" onclick="showAdminTab('admin-login-tab')">Admin Login</button>
+                        <button class="tab" onclick="showAdminTab('view-applications-tab')">View Applications</button>
+                        <button class="tab" onclick="showAdminTab('client-profiles-tab')">Client Profiles</button>
+                        <button class="tab" onclick="showAdminTab('status-control-tab')">Status Control</button>
+                        <button class="tab" onclick="showAdminTab('activity-logs-tab')">Activity Logs</button>
+                        <button class="tab" onclick="showAdminTab('reports-tab')">Reports</button>
+                    </div>
+
+                    <div id="admin-login-tab" class="tab-content active">
+                        <h3>Admin Login</h3>
+                        <form id="adminLoginForm">
+                            <div class="form-group">
+                                <label for="adminUsername">Username</label>
+                                <input type="text" id="adminUsername" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adminPassword">Password</label>
+                                <input type="password" id="adminPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adminRole">Role</label>
+                                <select id="adminRole" required>
+                                    <option value="">Select Role</option>
+                                    <option value="admin">Administrator</option>
+                                    <option value="manager">Manager</option>
+                                    <option value="processor">Application Processor</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Admin Login</button>
+                        </form>
+                    </div>
+
+                    <div id="view-applications-tab" class="tab-content">
+                        <h3>View Applications</h3>
+                        <div id="adminApplicationsView" class="hidden">
+                            <div class="form-group">
+                                <label for="filterStatus">Filter by Status:</label>
+                                <select id="filterStatus" onchange="filterApplications()">
+                                    <option value="all">All Applications</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="review">Under Review</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="rejected">Rejected</option>
+                                </select>
+                            </div>
+
+                            <div id="applicationsList">
+                                <div class="application-card">
+                                    <h4>Municipal Cleaning Contract - APP001</h4>
+                                    <p><strong>Client:</strong> ABC Cleaning Services</p>
+                                    <p><strong>Amount:</strong> R 500,000</p>
+                                    <p><strong>Status:</strong> <span class="status-badge status-review">Under Review</span></p>
+                                    <p><strong>Submitted:</strong> 2025-01-15</p>
+                                    <button class="btn" onclick="viewApplication('APP001')">View Details</button>
+                                    <button class="btn btn-success" onclick="processApplication('APP001', 'approve')">Approve</button>
+                                    <button class="btn btn-danger" onclick="processApplication('APP001', 'reject')">Reject</button>
+                                </div>
+
+                                <div class="application-card">
+                                    <h4>Road Construction Project - APP002</h4>
+                                    <p><strong>Client:</strong> XYZ Construction</p>
+                                    <p><strong>Amount:</strong> R 2,000,000</p>
+                                    <p><strong>Status:</strong> <span class="status-badge status-pending">Pending</span></p>
+                                    <p><strong>Submitted:</strong> 2025-01-20</p>
+                                    <button class="btn" onclick="viewApplication('APP002')">View Details</button>
+                                    <button class="btn btn-success" onclick="processApplication('APP002', 'approve')">Approve</button>
+                                    <button class="btn btn-danger" onclick="processApplication('APP002', 'reject')">Reject</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="adminLoginPrompt">
+                            <p>Please login to access the admin dashboard.</p>
+                        </div>
+                    </div>
+
+                    <div id="client-profiles-tab" class="tab-content">
+                        <h3>Client Profile Management</h3>
+                        <div id="adminClientProfiles" class="hidden">
+                            <div class="form-group">
+                                <label for="searchClient">Search Client:</label>
+                                <input type="text" id="searchClient" placeholder="Enter client name or email">
+                                <button class="btn" onclick="searchClient()">Search</button>
+                            </div>
+
+                            <div id="clientProfilesList">
+                                <div class="application-card">
+                                    <h4>ABC Cleaning Services</h4>
+                                    <p><strong>Contact:</strong> John Doe</p>
+                                    <p><strong>Email:</strong> john@abccleaning.co.za</p>
+                                    <p><strong>Phone:</strong> 011 123 4567</p>
+                                    <p><strong>Active Applications:</strong> 2</p>
+                                    <p><strong>Total Funded:</strong> R 1,500,000</p>
+                                    <button class="btn" onclick="editClientProfile('ABC001')">Edit Profile</button>
+                                    <button class="btn" onclick="viewClientHistory('ABC001')">View History</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="adminLoginPrompt2">
+                            <p>Please login to access client profiles.</p>
+                        </div>
+                    </div>
+
+                    <div id="status-control-tab" class="tab-content">
+                        <h3>Application Status Control</h3>
+                        <div id="adminStatusControl" class="hidden">
+                            <form id="statusUpdateForm">
+                                <div class="form-group">
+                                    <label for="statusAppNumber">Application Number</label>
+                                    <input type="text" id="statusAppNumber" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newStatus">New Status</label>
+                                    <select id="newStatus" required>
+                                        <option value="">Select Status</option>
+                                        <option value="pending">Pending</option>
+                                        <option value="review">Under Review</option>
+                                        <option value="approved">Approved</option>
+                                        <option value="rejected">Rejected</option>
+                                        <option value="funded">Funded</option>
+                                        <option value="closed">Closed</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="statusNotes">Status Notes</label>
+                                    <textarea id="statusNotes" rows="4" placeholder="Add notes about this status change"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Update Status</button>
+                            </form>
+                        </div>
+                        <div id="adminLoginPrompt3">
+                            <p>Please login to access status controls.</p>
+                        </div>
+                    </div>
+
+                    <div id="activity-logs-tab" class="tab-content">
+                        <h3>Activity Logs</h3>
+                        <div id="adminActivityLogs" class="hidden">
+                            <div class="form-group">
+                                <label for="logFilter">Filter Logs:</label>
+                                <select id="logFilter" onchange="filterLogs()">
+                                    <option value="all">All Activities</option>
+                                    <option value="login">Login/Logout</option>
+                                    <option value="application">Application Changes</option>
+                                    <option value="document">Document Access</option>
+                                    <option value="status">Status Updates</option>
+                                </select>
+                            </div>
+
+                            <div id="activityLogsList">
+                                <div class="application-card">
+                                    <p><strong>2025-01-20 14:30:</strong> Admin user 'manager1' updated status of APP001 from 'Pending' to 'Under Review'</p>
+                                </div>
+                                <div class="application-card">
+                                    <p><strong>2025-01-20 13:15:</strong> Client 'ABC Cleaning' submitted new application APP002</p>
+                                </div>
+                                <div class="application-card">
+                                    <p><strong>2025-01-20 12:00:</strong> Admin user 'processor1' logged in to system</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="adminLoginPrompt4">
+                            <p>Please login to access activity logs.</p>
+                        </div>
+                    </div>
+
+                    <div id="reports-tab" class="tab-content">
+                        <h3>Report Generation</h3>
+                        <div id="adminReports" class="hidden">
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <h4>Application Summary Report</h4>
+                                    <p>Overview of all applications by status and date range</p>
+                                    <div class="form-group">
+                                        <label for="reportFromDate">From Date:</label>
+                                        <input type="date" id="reportFromDate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reportToDate">To Date:</label>
+                                        <input type="date" id="reportToDate">
+                                    </div>
+                                    <button class="btn" onclick="generateReport('application-summary')">Generate Report</button>
+                                </div>
+
+                                <div class="feature-card">
+                                    <h4>Financial Summary</h4>
+                                    <p>Total funding amounts and outstanding balances</p>
+                                    <button class="btn" onclick="generateReport('financial')">Generate Report</button>
+                                </div>
+
+                                <div class="feature-card">
+                                    <h4>Client Activity Report</h4>
+                                    <p>Detailed client interactions and document submissions</p>
+                                    <div class="form-group">
+                                        <label for="clientReportFilter">Client:</label>
+                                        <select id="clientReportFilter">
+                                            <option value="all">All Clients</option>
+                                            <option value="ABC001">ABC Cleaning Services</option>
+                                            <option value="XYZ001">XYZ Construction</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn" onclick="generateReport('client-activity')">Generate Report</button>
+                                </div>
+
+                                <div class="feature-card">
+                                    <h4>Performance Metrics</h4>
+                                    <p>Processing times, approval rates, and staff performance</p>
+                                    <button class="btn" onclick="generateReport('performance')">Generate Report</button>
+                                </div>
+                            </div>
+
+                            <div id="reportResults" class="form-container hidden" style="margin-top: 2rem;">
+                                <h4>Report Results</h4>
+                                <div id="reportContent"></div>
+                                <button class="btn" onclick="exportReport()">Export to PDF</button>
+                                <button class="btn" onclick="exportReport('excel')">Export to Excel</button>
+                            </div>
+                        </div>
+                        <div id="adminLoginPrompt5">
+                            <p>Please login to access reports.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📧 <a href="mailto:mzwoda.mz@gmail.com">mzwoda.mz@gmail.com</a></p>
+                    <p>📱 <a href="tel:0793107866">079 310 7866</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Address</h4>
+                    <p>Lombardy 24 Lynwood Street<br>South Africa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="#" onclick="showSection('home')">Home</a></p>
+                    <p><a href="#" onclick="showSection('features')">Features</a></p>
+                    <p><a href="#" onclick="showSection('contact')">Contact</a></p>
+                    <p><a href="#" onclick="showSection('client-portal')">Client Portal</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tonix Corporation. All rights reserved.</p>
+            </div>
+        </footer>
+        </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- DELETE your <script type="module"> block -->
+<!-- PASTE THIS CODE INSTEAD, right before <script src="script.js"> -->
+
+<!-- Add these Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- Add your config object -->
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCDRI0y7H3JbPgLlJ2rL-8qyNtQ-HEK43M",
+    authDomain: "tonix-corporation.firebaseapp.com",
+    projectId: "tonix-corporation",
+    storageBucket: "tonix-corporation.firebasestorage.app",
+    messagingSenderId: "80066913203",
+    appId: "1:80066913203:web:4904c50ee7ae744df8e1c6"
+  };
+  
+  // Initialize Firebase and create the global 'db' variable
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore(); 
+</script>
+
+<!-- Your original script file will now find 'db' -->
+<script src="script.js"></script>
+
+</body>
+</html>
