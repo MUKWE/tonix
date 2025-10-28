@@ -258,6 +258,21 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Map Container */
+.map-container {
+    margin-top: 1rem;
+    text-align: center; /* Centers the iframe */
+}
+
+.map-container iframe {
+    border: 0;
+    max-width: 100%; /* Makes it responsive */
+    width: 800px; /* Default width */
+    height: 600px; /* Default height */
+    border-radius: 10px; /* Match theme */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Match theme */
+}
+
 .tabs {
     display: flex;
     margin-bottom: 2rem;
@@ -622,3 +637,31 @@ footer {
     color: #ccc;
 }
 /* --- END NEW FOOTER STYLES --- */
+
+/* --- NEW WHATSAPP CTA --- */
+.whatsapp-cta {
+    display: inline-block;
+    background: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px; /* Make it pill-shaped */
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-cta:hover {
+    background: #1EBE57;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-cta svg {
+    vertical-align: middle;
+    margin-right: 8px;
+    fill: currentColor; /* Ensure SVG color matches text */
+}
